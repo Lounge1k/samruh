@@ -8,6 +8,16 @@ h1,h2,h3,h4,h5,h6{
 	margin-top:0;
 	margin-bottom: 0;
 }
+.more{
+	display: inline-block;
+	font-size: 36px;
+	line-height: 28px;
+	cursor: pointer;
+	background-color: #ffc550;
+	color: #ed1e79;
+	padding:16px 88px 16px 96px;
+	margin-top: 50px;
+}
 .wrap{
 	width:100%;
 	margin:0 auto;
@@ -165,7 +175,7 @@ h1,h2,h3,h4,h5,h6{
 		background-size: contain;
 	}
 }
-.worked{
+.black-white{
 	width:100%;	
 	margin-top: -1px;
 	overflow: hidden;
@@ -193,16 +203,21 @@ h1,h2,h3,h4,h5,h6{
 		p{
 			font-size:28px;
 		}
-		.more{
-			display: inline-block;
-			font-size: 36px;
-			line-height: 28px;
-
-			background-color: #ffc550;
-			color: #ed1e79;
-			padding:16px 88px 16px 96px;
-			margin-top: 50px;
-		}
+		&.contacts{
+			.sphere{
+				margin-top: 207px;
+				width: 499px;
+				height: 449px;
+				background:url("/app/images/sphere.png") no-repeat center center;
+				margin: 0 auto;
+				margin-bottom: 45px;
+			}
+			p{
+				font-size:53px;
+				font-family: Monotype;
+				font-style: italic;
+			}
+		}		
 	}
 	.black{
 		background-color: #000;
@@ -242,5 +257,42 @@ h1,h2,h3,h4,h5,h6{
 				background-size: contain;
 			}
 		}
+	}	
+}
+.team{
+	width: 100%;
+	margin-top: 3px;
+	.row{
+		margin-left:0;
+		margin-right:0;
+	}
+	.col-md-2{
+		height: 1080px;
+		background:url("/app/images/member.png") no-repeat top center;
+		background-color:#323232;
+		margin-right: 8px;
+		margin-left:0;
+		width: 372px;
+		&.last{
+			margin-right:0;
+		}
 	}
 }
+.school{
+	height: 1080px;
+	background:url("/app/images/about.png") no-repeat top center;
+	background-color: #cdc9c3;
+	padding-top: 387px;
+	text-align: center;
+	.school-logo{
+		width: 332px;
+		height: 330px;
+		background:url("/app/images/school-logo.png") no-repeat center center;
+		margin:0 auto;
+		margin-bottom: 57px;
+	}
+	p{
+		font-size: 30px;
+	}
+}
+
