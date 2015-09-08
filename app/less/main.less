@@ -8,6 +8,14 @@ h1,h2,h3,h4,h5,h6{
 	margin-top:0;
 	margin-bottom: 0;
 }
+.row{
+  margin-left:0;
+  margin-right:0;
+}
+.col-md-8,.col-md-2{
+  padding-left:0;
+  padding-right:0;
+}
 .more{
 	display: inline-block;
 	font-size: 36px;
@@ -33,18 +41,16 @@ h1,h2,h3,h4,h5,h6{
 	text-align: center;
 	padding-top: 29px;
 	padding-bottom: 29px;
+    padding-left: 50px;
+    padding-right: 53px;
+    height: 87px;
 	.toggle-menu{
-		position: absolute;
-		left: 50px;
-		top: 29px;	
-		width:47px;
+		display: block;
 		height:33px;
-		background:url("/app/images/toggle-menu.png") no-repeat center center;	
+		background:url("/app/images/toggle-menu.png") no-repeat left center;
 	}
 	.top-menu{
 		overflow: visible;
-		padding-left: 430px;
-		padding-right:430px;
 		margin-bottom:0;
 		li{
 			padding-left: 0;
@@ -74,28 +80,28 @@ h1,h2,h3,h4,h5,h6{
 		}
 	}
 	.logo{
-		position: absolute;
-		top: 14px;
-		right: 52px;
-		width:62px;
-		height:66px;
-		background:url("/app/images/logo.png") no-repeat center center;
-		background-size: contain;
+      margin-top:-18px;
+      display: block;
+      height:66px;
+      background:url("/app/images/logo.png") no-repeat right center;
+      background-size: contain;
 	}
 }
 .main-page{
 	width: 100%;
-	height:100%;
 	position: relative;
 	background:url("/app/images/main.png") no-repeat center center fixed;
 	background-size: cover;
 	height: 1078px;
 	text-align: center;
-	.name{		
-		font-size: 272px;
-		line-height: 240px;
-		padding-top: 430px;
-		color: #ed1e79;		
+    padding-top: 22%;
+	.name{
+      color: #ed1e79;
+      width: 77%;
+      height: 40%;
+      background:url("/app/images/samruh-header.png") no-repeat center center;
+      background-size: contain;
+      margin: 0 auto;
 	}
 	.what-is{
 		font-size: 96px;
@@ -108,7 +114,6 @@ h1,h2,h3,h4,h5,h6{
 	}
 	.arrow{
 		margin: 0 auto;
-
 		width: 107px;
 		height: 64px;
 		margin:0 auto;
@@ -139,38 +144,42 @@ h1,h2,h3,h4,h5,h6{
 			color: #e31e74; 
 		}			
 	}
+    .row{
+      height: 317px;
+    }
 	.row:first-child{
 		padding-left:0;
 		padding-right:0;
-		margin-bottom:8px;		
+		margin-bottom:8px;
+        height: 756px;
 	}
 	.world-book{
-		height: 756px;
+        height: 100%;
 		background:url("/app/images/video-1.png") no-repeat center center;
 		background-size: contain;
 	}
 	.tarix{
-		height: 756px;
+        height: 100%;
 		background:url("/app/images/video-2.png")no-repeat center center;
 		background-size: contain;
 	}
 	.kit-app{
-		height: 756px;
+      height: 100%;
 		background:url("/app/images/video-3.png")no-repeat center center;
 		background-size: contain;
 	}
 	.camel{
-		height: 317px;
+        height: 100%;
 		background:url("/app/images/video-4.png")no-repeat center center;
 		background-size: contain;
 	}
 	.reel{
-		height: 317px;
+        height: 100%;
 		background:url("/app/images/video-5.png")no-repeat center center;
 		background-size: contain;
 	}
 	.adams{
-		height: 317px;
+        height: 100%;
 		background:url("/app/images/video-6.png")no-repeat center center;
 		background-size: contain;
 	}
@@ -280,7 +289,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .school{
 	height: 1080px;
-	background:url("/app/images/about.png") no-repeat top center;
+	background:url("/app/images/about.png") no-repeat top center fixed;
 	background-color: #cdc9c3;
 	padding-top: 387px;
 	text-align: center;
