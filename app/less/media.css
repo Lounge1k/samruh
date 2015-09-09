@@ -1,0 +1,43 @@
+@media screen and (max-width: 1300px){
+    .header .top-menu li{
+        font-size: 25px;
+    }
+    .main-page{
+        height: 939px;
+        background:url("/app//images/main-1280.png") no-repeat center center;
+    }
+
+    .main-page .name{
+        width: 956px;
+        height: 164px;
+        margin-bottom: 29px;
+    }
+
+    .videos .row{
+        height: 505px;
+    }
+
+    .videos .row:first-child{
+        height: 493px;
+    }
+    .videos .video .video-name{
+        font-size: 41px;
+    }
+    .videos .video .year{
+        font-size: 24px;
+    }
+    .videos .camel{
+        width: 33.3333333%;
+        background:url("/app/images/camel-1280.png") no-repeat center center;
+    }
+    .videos .reel{
+        width:33.3333333%;
+        background:url("/app/images/reel-1280.png") no-repeat center center;
+    }
+    .videos .adams{
+        width: 33.3333333%;
+        background:url("/app/images/adamas-1280.png") no-repeat center center;
+    }
+
+
+}
