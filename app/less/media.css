@@ -4,7 +4,7 @@
     }
     .main-page{
         height: 939px;
-        background:url("/app//images/main-1280.png") no-repeat center center;
+        background:url("/app//images/main-1280.png") no-repeat center center fixed;
     }
 
     .main-page .name{
@@ -13,12 +13,18 @@
         margin-bottom: 29px;
     }
 
+    .more{
+        font-size: 29px;
+        padding: 14px 68px 15px 80px;
+        margin-top: 30px;
+    }
+
     .videos .row{
-        height: 505px;
+        height: 492px;
     }
 
     .videos .row:first-child{
-        height: 493px;
+        height: 502px;
     }
     .videos .video .video-name{
         font-size: 41px;
@@ -26,18 +32,92 @@
     .videos .video .year{
         font-size: 24px;
     }
+    .videos .video .info{
+        bottom: 62px;
+    }
+    .videos .world-book{
+        background:url("/app/images/video-1-1280.png") no-repeat top left;
+    }
+    .videos .tarix{
+        background:url("/app/images/video-2-1280.png") no-repeat top center;
+    }
+    .videos .kit-app{
+        background:url("/app/images/video-3-1280.png") no-repeat top right;
+    }
     .videos .camel{
-        width: 33.3333333%;
-        background:url("/app/images/camel-1280.png") no-repeat center center;
+        width: 33%;
+        background:url("/app/images/camel-1280.png") no-repeat left top;
     }
     .videos .reel{
-        width:33.3333333%;
-        background:url("/app/images/reel-1280.png") no-repeat center center;
+        width:33%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        background:url("/app/images/reel-1280.png") no-repeat top center;
     }
     .videos .adams{
-        width: 33.3333333%;
-        background:url("/app/images/adamas-1280.png") no-repeat center center;
+        width: 33%;
+        background:url("/app/images/adamas-1280.png") no-repeat right top;
     }
+    .black-white{
+        height: 960px;
+    }
+    .black-white .white h1{
+     font-size: 113px;
+    }
+    .black-white .white h2{
+        font-size: 20px;
+    }
+    .black-white .white p{
+        font-size: 17px;
+    }
+    .black-white .white .black-logo{
+        width:205px;
+        height: 211px;
+    }
+    .black-white .black h3{
+        font-size: 22px;
+        padding-left: 24px;
+    }
+    .black-white .black .row{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .black-white .black .col-md-3{
+        height: 110px;
+    }
+    .team .col-md-2{
+        background: url("/app/images/member-1280.png") no-repeat top center;
+        background-color: #323232;
+        width: 19.5%;
+        margin-right:0;
+        margin-left:0.5%;
+        height: 1024px;
+    }
+    .team .col-md-offset-1{
+        margin-left:0;
+        width: 20%;
+    }
+    .school{
+        background: url("/app/images/about-1280.png") no-repeat center 87px fixed;
+        background-color: #cdc9c3;
+        height: 1024px;
+    }
+    .school .school-logo{
+        width: 264px;
+        height: 262px;
+    }
+    .school p{
+        font-size: 24px;
+    }
+    .black-white .white.contacts .sphere{
+        width: 368px;
+        height: 364px;
+        background:url("/app/images/sphere-1280.png") no-repeat center center;
+    }
+    .black-white .white.contacts p{
+        font-size:43px;
+    }
+
 
 
 }
