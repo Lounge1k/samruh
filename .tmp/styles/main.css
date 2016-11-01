@@ -1,0 +1,427 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial;
+  min-width: 768px;
+}
+.zero {
+  -moz-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.col-xs-8,
+.col-xs-2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.more {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 28px;
+  cursor: pointer;
+  background-color: #ffc550;
+  color: #ed1e79;
+  padding: 16px 88px 16px 96px;
+  margin-top: 50px;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  text-align: center;
+  padding: 30px 50px;
+  height: 10%;
+}
+.header .toggle-menu {
+  display: block;
+  height: 33px;
+  background: url("/app/images/toggle-menu.png") no-repeat left center;
+}
+.header .top-menu {
+  overflow: visible;
+  margin-bottom: 0;
+}
+.header .top-menu li {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 2vw;
+  line-height: 29px;
+  cursor: pointer;
+  display: inline-block;
+  color: #ddab45;
+  position: relative;
+}
+.header .top-menu li a {
+  color: inherit;
+  text-decoration: none;
+}
+.header .top-menu li .triangle {
+  display: none;
+  position: absolute;
+  bottom: -74%;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 11px 22px 11px;
+}
+.header .top-menu li:hover {
+  color: #d4145a;
+}
+.header .top-menu li:hover .triangle {
+  display: block;
+  border-color: transparent transparent #8C8C8C transparent;
+}
+.header .top-menu li.active {
+  color: #d4145a;
+}
+.header .top-menu li.active .triangle {
+  display: block;
+  border-color: transparent transparent #FFC644 transparent !important;
+}
+.header .logo {
+  margin-top: -18px;
+  display: block;
+  height: 66px;
+  background: url("/app/images/logo.png") no-repeat right center;
+  background-size: contain;
+}
+.background-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/app/images/main.png") no-repeat center center fixed;
+  background-size: cover;
+}
+.main-page {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.main-page .name {
+  color: #ed1e79;
+  width: 75%;
+  height: 60%;
+  background: url("/app/images/samruh-header.png") no-repeat bottom center;
+  background-size: contain;
+  margin: 0 auto;
+}
+.main-page .what-is {
+  font-size: 96px;
+  color: #fff;
+  display: inline-block;
+  background-color: #000;
+  line-height: 90px;
+  padding: 7px 7px 13px 7px;
+  margin-bottom: 29px;
+}
+.main-page .arrow {
+  width: 107px;
+  height: 64px;
+  margin: 0 auto;
+  background: url("/app/images/arrow.png") no-repeat center center;
+  margin-top: 0;
+  transition: margin-top 0.5s;
+}
+.videos {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #e4e2dc;
+  height: 100%;
+}
+.videos .video {
+  position: relative;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.videos .video .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.videos .video .video-name {
+  bottom: 0;
+  color: #fff;
+  font-size: 62px ;
+}
+.videos .video .year {
+  font-size: 36px;
+  color: #e31e74;
+}
+.videos .video .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.videos .video .overlay:hover {
+  opacity: 0;
+}
+.videos .row {
+  height: 30%;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.videos .row:first-child {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 8px;
+  height: 70%;
+}
+.videos .world-book {
+  position: relative;
+  height: 100%;
+  background: url("/app/images/video-1.png") no-repeat center center;
+  background-size: cover;
+}
+.videos .tarix {
+  position: relative;
+  height: 100%;
+  background: url("/app/images/video-2.png") no-repeat center center;
+  background-size: cover;
+}
+.videos .kit-app {
+  position: relative;
+  height: 100%;
+  background: url("/app/images/video-3.png") no-repeat center center;
+  background-size: cover;
+}
+.videos .camel {
+  position: relative;
+  height: 100%;
+  background: url("/app/images/video-4.png") no-repeat center center;
+  background-size: cover;
+}
+.videos .reel {
+  position: relative;
+  height: 100%;
+  background: url("/app/images/video-5.png") no-repeat center center;
+  background-size: cover;
+}
+.videos .adams {
+  position: relative;
+  height: 100%;
+  background: url("/app/images/video-6.png") no-repeat center center;
+  background-size: cover;
+}
+.black-white {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.black-white .partners {
+  background: url('/app/images/logo_partners.svg') no-repeat center top;
+  background-size: contain;
+  height: 100%;
+}
+.black-white .col-md-5 {
+  width: 40%;
+}
+.black-white .col-md-7 {
+  width: 60%;
+}
+.black-white .white {
+  background-color: #fff;
+  height: 100%;
+  padding-top: 90px;
+}
+.black-white .white .black-logo {
+  margin: 0 auto;
+  width: 244px;
+  height: 254px;
+  background: url("/app/images/black-logo.png") no-repeat center center;
+}
+.black-white .white h1 {
+  font-size: 136px;
+  line-height: 100px;
+  margin-top: 28px;
+  margin-bottom: 23px;
+}
+.black-white .white h2 {
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+.black-white .white p {
+  font-size: 28px;
+}
+.black-white .white.contacts .sphere {
+  margin-top: 207px;
+  width: 499px;
+  height: 449px;
+  background: url("/app/images/sphere.png") no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+.black-white .white.contacts p {
+  font-size: 53px;
+  font-family: Monotype;
+  font-style: italic;
+}
+.black-white .black {
+  background-color: #231F20;
+  height: 100%;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+.black-white .black h3 {
+  margin-top: 90px;
+  color: #ed1e79;
+  background-color: #1a1a1a ;
+  font-size: 27px;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  padding-left: 49px;
+}
+.black-white .black .row {
+  padding-right: 80px ;
+  padding-left: 90px;
+}
+.black-white .black .col-md-3.first {
+  background: url("/app/images/first.png") no-repeat center center;
+  background-size: contain;
+}
+.black-white .black .col-md-3.sony {
+  background: url("/app/images/sony.png") no-repeat center center;
+  background-size: contain;
+}
+.black-white .black .col-md-3.camel {
+  background: url("/app/images/camel.png") no-repeat center center;
+  background-size: contain;
+}
+.black-white .black .col-md-3.adams {
+  background: url("/app/images/adams.png") no-repeat center center;
+  background-size: contain;
+}
+.team {
+  width: 100%;
+  height: 100%;
+  background-color: #323232;
+}
+.team .row {
+  margin-left: -5px;
+  margin-right: -5px;
+  height: 100%;
+}
+.team .col-md-5th {
+  height: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  position: relative;
+  min-height: 1px;
+  width: 20%;
+  float: left;
+}
+.team .col-md-5th .member {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(#greyscale);
+  filter: gray;
+  -webkit-transition: -webkit-filter 500ms linear;
+}
+.team .col-md-5th .member.artur {
+  background: url("/app/images/artur.jpg") no-repeat bottom left;
+  background-size: cover;
+}
+.team .col-md-5th .member.albert {
+  background: url("/app/images/albert.jpg") no-repeat bottom left;
+  background-size: cover;
+}
+.team .col-md-5th .member.ceo {
+  background: url("/app/images/artur_ceo.jpg") no-repeat bottom left;
+  background-size: cover;
+}
+.team .col-md-5th .member.denis {
+  background: url("/app/images/denis.jpg") no-repeat bottom left;
+  background-size: cover;
+}
+.team .col-md-5th .member.ildar {
+  background: url("/app/images/ildar.jpg") no-repeat bottom left;
+  background-size: cover;
+}
+.team .col-md-5th .member:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+.team .col-md-5th .member:hover + .member-info {
+  bottom: 0;
+  opacity: 1;
+}
+.team .col-md-5th .member-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  transition: bottom 0.5s;
+  opacity: 0;
+}
+.team .col-md-5th .member-info .member-name {
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+.team .col-md-5th .member-info .member-prof {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.modal #made-in-ny {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.modal #made-in-ny iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal .iframe {
+  text-align: center;
+}

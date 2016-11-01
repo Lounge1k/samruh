@@ -5,6 +5,12 @@ html,body{
   font-family: Arial;
   min-width: 768px;
 }
+.zero{
+  -moz-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  -o-transition-property: none !important;
+  transition: none !important;
+}
 h1,h2,h3,h4,h5,h6{
 	margin-top:0;
 	margin-bottom: 0;
@@ -29,6 +35,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .wrap{
 	width:100%;
+  	height: 100%;
 	margin:0 auto;
 	position: relative;
 }
@@ -41,7 +48,7 @@ h1,h2,h3,h4,h5,h6{
 	background-color: #000;
 	text-align: center;
   	padding:30px 50px;
-    height: 87px;
+    height: 10%;
 	.toggle-menu{
 		display: block;
 		height:33px;
@@ -53,7 +60,7 @@ h1,h2,h3,h4,h5,h6{
 		li{
 			padding-left: 0;
 			padding-right:0;
-			font-size: 2.5vw;
+			font-size: 2vw;
 			line-height: 29px;
 			cursor: pointer;
 			display: inline-block;
@@ -64,25 +71,27 @@ h1,h2,h3,h4,h5,h6{
 			text-decoration:none;
 		  }
 			.triangle{
-				display: none;
-				position: absolute;
-				bottom:-74%;
-				left:40%;
-				width:22px;
-				height: 22px;
-				background:url("/app/images/triangle.png") no-repeat center center;
-				background-size: contain;
-			}
+              display: none;
+              position: absolute;
+              bottom:-74%;
+              left:40%;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 11px 22px 11px;
+            }
 			&:hover{
 				color: #d4145a;
 				.triangle{
 					display: block;
+                  border-color: transparent transparent #8C8C8C transparent;
 				}
 			}
 		  &.active{
 			color: #d4145a;
 			.triangle{
 			  display: block;
+              border-color: transparent transparent #FFC644 transparent !important;
 			}
 		  }
 		}
@@ -95,19 +104,25 @@ h1,h2,h3,h4,h5,h6{
       background-size: contain;
 	}
 }
+.background-pic{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:url("/app/images/main.png") no-repeat center center fixed;
+  background-size: cover;
+}
 .main-page{
+  height:100%;
 	width: 100%;
 	position: relative;
-	background:url("/app/images/main.png") no-repeat center center fixed;
-	background-size: cover;
-	height: 1078px;
 	text-align: center;
-    padding-top: 22%;
 	.name{
       color: #ed1e79;
-      width: 77%;
-      height: 40%;
-      background:url("/app/images/samruh-header.png") no-repeat center center;
+      width: 75%;
+      height: 60%;
+      background:url("/app/images/samruh-header.png") no-repeat bottom center;
       background-size: contain;
       margin: 0 auto;
 	}
@@ -126,6 +141,8 @@ h1,h2,h3,h4,h5,h6{
 		height: 64px;
 		margin:0 auto;
 		background: url("/app/images/arrow.png") no-repeat center center;
+	  	margin-top:0;
+	  	transition: margin-top 0.5s;
 	}
 }
 .videos{
@@ -133,6 +150,7 @@ h1,h2,h3,h4,h5,h6{
 	overflow: hidden;
 	position: relative;
 	background-color: #e4e2dc;
+  height:100%;
 	.video{
 	  position: relative;
 	  height:100%;
@@ -169,7 +187,7 @@ h1,h2,h3,h4,h5,h6{
 	  }
 	}
     .row{
-      height: 317px;
+      height: 30%;
 	  margin-left:-5px;
 	  margin-right:-5px;
     }
@@ -177,47 +195,65 @@ h1,h2,h3,h4,h5,h6{
 		padding-left:0;
 		padding-right:0;
 		margin-bottom:8px;
-        height: 756px;
+        height: 70%;
 	}
 	.world-book{
+      position: relative;
         height: 100%;
 		background:url("/app/images/video-1.png") no-repeat center center;
 		background-size: cover;
 	}
 	.tarix{
+      position: relative;
         height: 100%;
 		background:url("/app/images/video-2.png")no-repeat center center;
 		background-size: cover;
 	}
 	.kit-app{
+      position: relative;
       height: 100%;
 		background:url("/app/images/video-3.png")no-repeat center center;
 		background-size: cover;
 	}
 	.camel{
+      position: relative;
         height: 100%;
 		background:url("/app/images/video-4.png")no-repeat center center;
 		background-size: cover;
 	}
 	.reel{
+      position: relative;
         height: 100%;
 		background:url("/app/images/video-5.png")no-repeat center center;
 		background-size: cover;
 	}
 	.adams{
+      position: relative;
         height: 100%;
 		background:url("/app/images/video-6.png")no-repeat center center;
 		background-size: cover;
 	}
 }
 .black-white{
+  height:100%;
 	width:100%;
 	overflow: hidden;
 	text-align: center;
+  .partners{
+	background:url('/app/images/logo_partners.svg') no-repeat center top;
+	background-size:contain;
+	height:100%;
+  }
+  .col-md-5{
+	width:40%;
+  }
+  .col-md-7{
+	width:60%;
+  }
 	.white{
 		background-color: #fff;
-		height:1080px;	
-		padding-top: 208px;
+		height:100%;
+	  	padding-top:90px;
 		.black-logo{
 			margin: 0 auto;
 			width: 244px;
@@ -254,13 +290,13 @@ h1,h2,h3,h4,h5,h6{
 		}		
 	}
 	.black{
-		background-color: #000;
-		height:1080px;
-		padding-top: 90px;
+		background-color: #231F20;
+		height:100%;
 		text-align: left;
 		padding-left: 0;
 		padding-right:0;
 		h3{
+		  	margin-top:90px;
 			color: #ed1e79;
 			background-color: #1a1a1a ;
 			font-size: 27px;
@@ -272,8 +308,7 @@ h1,h2,h3,h4,h5,h6{
 			padding-right:80px ;
 			padding-left: 90px;
 		}
-		.col-md-3{	
-			height:140px;		
+		.col-md-3{
 			&.first{
 				background:url("/app/images/first.png")no-repeat center center;
 				background-size: contain;
@@ -295,7 +330,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .team{
 	width: 100%;
-  	height: 1080px;
+  	height: 100%;
   background-color:#323232;
 	.row{
 		margin-left:-5px;
@@ -312,58 +347,103 @@ h1,h2,h3,h4,h5,h6{
 	  float: left;
 	  .member{
 		width:100%;
-		height:90%;
+		height:100%;
+        -webkit-filter: grayscale(1);
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: url(#greyscale);
+        filter: gray;
+        -webkit-transition : -webkit-filter 500ms linear;
 		&.artur{
-		  background:url("/app/images/artur.jpg") no-repeat top center;
+		  background:url("/app/images/artur.jpg") no-repeat bottom left;
 		  background-size:cover;
 		}
 		&.albert{
-		  background:url("/app/images/aidar.jpg") no-repeat top center;
+		  background:url("/app/images/albert.jpg") no-repeat bottom left;
 		  background-size:cover;
 		}
 		&.ceo{
-		  background:url("/app/images/artur_ceo.jpg") no-repeat top center;
+		  background:url("/app/images/artur_ceo.jpg") no-repeat bottom left;
 		  background-size:cover;
 		}
 		&.denis{
-		  background:url("/app/images/denis.jpg") no-repeat top center;
+		  background:url("/app/images/denis.jpg") no-repeat bottom left;
 		  background-size:cover;
 		}
 		&.ildar{
-		  background:url("/app/images/ildar.jpg") no-repeat top center;
+		  background:url("/app/images/ildar.jpg") no-repeat bottom left;
 		  background-size:cover;
 		}
+        &:hover{
+          -webkit-filter: none;
+          -webkit-filter: none;
+          filter: none;
+          filter: none;
+          filter: none;
+          & + .member-info{
+            bottom:0;
+            opacity:1;
+          }
+        }
 	  }
-	  .member-name{
-		font-size:22px;
-		text-align:center;
-		margin-top:20px;
-		color:#fff;
-	  }
-	  .member-prof{
-		font-size:18px;
-		text-align:center;
-		margin-top:10px;
-		font-style:italic;
-		color:#fff;
-	  }
+      .member-info{
+        position:absolute;
+        left:0;
+        right:0;
+        bottom: -40px;
+        transition:bottom 0.5s;
+        opacity:0;
+        .member-name{
+          font-size:2vw;
+          text-align:center;
+          margin-top:20px;
+          color:#fff;
+        }
+        .member-prof{
+          font-size:1.5vw;
+          text-align:center;
+          margin-top:10px;
+          font-style:italic;
+          color:#fff;
+          margin-bottom:15px;
+        }
+      }
 	}
 }
-.school{
-	height: 1080px;
-	background:url("/app/images/about.png") no-repeat top center fixed;
-	background-color: #cdc9c3;
-	padding-top: 387px;
+.modal{
+  #made-in-ny{
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	iframe{
+	  position:absolute;
+	  top:0;
+	  left:0;
+	  width:100%;
+	  height:100%;
+	}
+  }
+  .iframe{
 	text-align: center;
-	.school-logo{
-		width: 332px;
-		height: 330px;
-		background:url("/app/images/school-logo.png") no-repeat center center;
-		margin:0 auto;
-		margin-bottom: 57px;
-	}
-	p{
-		font-size: 30px;
-	}
+  }
 }
+//.school{
+//	height: 100%;
+//	background:url("/app/images/about.png") no-repeat top center fixed;
+//	background-color: #cdc9c3;
+//	padding-top: 387px;
+//	text-align: center;
+//	.school-logo{
+//		width: 332px;
+//		height: 330px;
+//		background:url("/app/images/school-logo.png") no-repeat center center;
+//		margin:0 auto;
+//		margin-bottom: 57px;
+//	}
+//	p{
+//		font-size: 30px;
+//	}
+//}
 
