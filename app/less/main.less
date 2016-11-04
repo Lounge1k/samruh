@@ -97,11 +97,16 @@ h1,h2,h3,h4,h5,h6{
 		}
 	}
 	.logo{
-      margin-top:-18px;
+      margin-top:-30px;
       display: block;
-      height:66px;
-      background:url("/app/images/logo.png") no-repeat right center;
-      background-size: contain;
+      height:100px;
+      //background:url("/app/images/samruh_logo.svg") no-repeat right center;
+      //background-size: contain;
+	  -webkit-mask: url("/app/images/samruh_logo.svg")  no-repeat right center;
+	  mask: url("/app/images/samruh_logo.svg")  no-repeat right center;
+	  -webkit-mask-size: contain;
+	  mask-size: contain;
+	  background-color: #d4145a;
 	}
 }
 .background-pic{
@@ -253,7 +258,7 @@ h1,h2,h3,h4,h5,h6{
 	.white{
 		background-color: #fff;
 		height:100%;
-	  	padding-top:90px;
+	  	padding-top:100px;
 		.black-logo{
 			margin: 0 auto;
 			width: 244px;
@@ -272,6 +277,7 @@ h1,h2,h3,h4,h5,h6{
 		}
 		p{
 			font-size:28px;
+		  	text-align: left;
 		}
 		&.contacts{
 			.sphere{
@@ -326,6 +332,39 @@ h1,h2,h3,h4,h5,h6{
 				background-size: contain;
 			}
 		}
+	  &.contacts {
+		padding-top: 120px;
+		color: #fff;
+		text-align: center;
+		font-size: 40px;
+		.logo {
+		  display: block;
+		  height:50%;
+		  -webkit-mask: url("/app/images/samruh_logo.svg")  no-repeat center center;
+		  mask: url("/app/images/samruh_logo.svg")  no-repeat center center;
+		  -webkit-mask-size: contain;
+		  mask-size: contain;
+		  background-color: #fff;
+		}
+		h1{
+		  margin-bottom: 20px;
+		  font-size: 50px;
+		}
+		a{
+		  text-decoration: none;
+		  color: #fff;
+		  &:hover{
+			color: #fff;
+			text-decoration: none;
+		  }
+		}
+		div {
+		  margin-bottom: 20px;
+		  &.phone {
+			font-style: italic;
+		  }
+		}
+	  }
 	}	
 }
 .team{
